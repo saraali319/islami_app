@@ -2,7 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:islami_app/screens/on_boarding_screen.dart';
 
-import 'home_view.dart';
+import '../home/home_view.dart';
 
 class IntroScreen extends StatefulWidget {
   static const String routeName = "IntroScreen";

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/ui/home/tabs/quran_tab/quran_tab.dart';
 import '../../themes/colors.dart';
 import '../../themes/text_styles.dart';
 
@@ -19,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
   List<Widget> tabs = [
-    Container(color: Colors.black),
+    QUranTab(),
     Container(color: Colors.blue),
     Container(color: Colors.green),
     Container(color: Colors.yellow),

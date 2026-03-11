@@ -53,6 +53,8 @@ class QUranTab extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: TextFormField(
+                    cursorColor: AppColors.gold,
+                    style: TextStyles.labelLargeStyle(),
 
                     decoration: InputDecoration(
                       prefixIcon: ImageIcon(

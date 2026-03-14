@@ -27,14 +27,7 @@ class Sura {
 /// This list is generated dynamically by combining parallel arrays of
 /// Arabic names, English names, and verse counts. The [id] is automatically
 /// assigned based on the index (1-based).
-List<Sura> suraList = List.generate(arabicAuranSuras.length, (index) {
-  return Sura(
-    id: index + 1,
-    nameEn: englishQuranSurahs[index],
-    nameAr: arabicAuranSuras[index],
-    versesNumber: AyaNumber[index],
-  );
-});
+
 
 List<String> arabicAuranSuras = [
   "الفاتحه",
@@ -383,4 +376,13 @@ List<String> AyaNumber = [
   '4',
   '5',
   '6'
+
 ];
+List<Sura> suraList = List.generate(arabicAuranSuras.length, (index) {
+  return Sura(
+    id: index + 1,
+    nameEn: englishQuranSurahs[index],
+    nameAr: arabicAuranSuras[index],
+    versesNumber: AyaNumber[index],
+  );
+});

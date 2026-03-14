@@ -22,7 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> tabs = [
     QUranTab(),
-    HadethTab    (),
+ HadethTab    (),
+     HadethTab (),
     Container(color: Colors.green),
     Container(color: Colors.blue),
     QUranTab(),

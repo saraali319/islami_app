@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/ui/hadeth_details/hadeth_details.dart';
 import 'package:islami_app/ui/home/home_view.dart';
+import 'package:islami_app/ui/home/tabs/hadeth_tab/model/hadeth_model.dart';
 import 'package:islami_app/ui/home/tabs/quran_tab/models/sura_model.dart';
 import 'package:islami_app/ui/intro/intro_screen.dart';
 import 'package:islami_app/ui/on_boarding_screen.dart';
@@ -23,7 +25,14 @@ class MyApp extends StatelessWidget{
         return SuraDetails(sura: sura);
 
 
-    },},
+    },
+      HadethDetails.routeName: (context) {
+        var hadeth = ModalRoute.of(context)?.settings.arguments as Hadeth;
+        return HadethDetails(hadeth: hadeth);
+
+
+      },
+    },
         initialRoute: IntroScreen.routeName,
   );
   }

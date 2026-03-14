@@ -68,7 +68,12 @@ class _HomeScreenState extends State<HomeScreen> {
             selectedIndex = newIndex;
             pageController.jumpToPage(
               selectedIndex,
-            );},
+            );
+            setState(() {
+
+            });
+            },
+
         type: BottomNavigationBarType.fixed,
         backgroundColor: AppColors.gold,
         selectedItemColor: AppColors.white,
